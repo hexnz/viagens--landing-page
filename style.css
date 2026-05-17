@@ -1,0 +1,259 @@
+/* style.css */
+@import url(cards.css);
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #263238;
+  background-color: #f4f1ec;
+}
+
+.navbar {
+  width: 100%;
+  min-height: 70px;
+  padding: 0 40px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  position: relative;
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 800;
+  color: #2f5d50;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: transform 200ms, color 200ms;
+}
+
+.logo:hover {
+  color: #d88a35;
+  transform: translateY(-2px);
+}
+
+.logo-t {
+  position: relative;
+  display: inline-block;
+  color: #d88a35;
+  font-size: 32px;
+  margin: 0 1px;
+  z-index: 2;
+}
+
+.logo-t::before,
+.logo-t::after {
+  content: "T";
+  position: absolute;
+  color: rgba(47, 93, 80, 0.25);
+  z-index: -1;
+}
+
+.logo-t::before {
+  left: -8px;
+  top: -10px;
+}
+
+.logo-t::after {
+  left: 8px;
+  top: 10px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  color: #263238;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 14px;
+  border-radius: 4px;
+  transition: background-color 200ms, color 200ms;
+}
+
+.nav-list a:hover {
+  background-color: #2f5d50;
+  color: #ffffff;
+}
+
+.banner {
+  min-height: 82vh;
+  background-image: url(./assets/Dublin.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 60px 40px;
+}
+
+.banner-content {
+  max-width: 720px;
+  color: #ffffff;
+}
+
+.banner-content h1 {
+  font-size: 56px;
+  line-height: 1.05;
+  margin: 0 0 20px;
+}
+
+.banner-content p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin: 0 0 30px;
+}
+
+.banner-button,
+.back-link {
+  display: inline-block;
+  background-color: #d88a35;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 13px 22px;
+  border-radius: 4px;
+  transition: background-color 200ms, transform 200ms;
+}
+
+.banner-button:hover,
+.back-link:hover {
+  background-color: #2f5d50;
+  transform: translateY(-2px);
+}
+
+.section {
+  padding: 80px 40px;
+  background-color: #ffffff;
+}
+
+.section-light {
+  background-color: #e8f0ec;
+}
+
+.section-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 36px;
+  color: #2f5d50;
+  margin: 0 0 18px;
+}
+
+.section p {
+  color: #263238;
+  font-size: 19px;
+  line-height: 1.7;
+  margin: 0 0 28px;
+}
+
+.comments-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-bottom: 32px;
+}
+
+.comment-card {
+  background-color: #ffffff;
+  border-left: 7px solid #d88a35;
+  padding: 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+}
+
+.comment-profile {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.comment-profile img {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.comment-profile h3 {
+  margin: 0 0 4px;
+  color: #2f5d50;
+  font-size: 18px;
+}
+
+.comment-profile span {
+  color: #d88a35;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.comment-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+footer {
+  background-color: #263238;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    padding: 18px 20px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .banner {
+    min-height: 76vh;
+    padding: 50px 24px;
+  }
+
+  .banner-content h1 {
+    font-size: 38px;
+  }
+
+  .banner-content p {
+    font-size: 18px;
+  }
+
+  .section {
+    padding: 60px 24px;
+  }
+
+  .comments-grid {
+    grid-template-columns: 1fr;
+  }
+}
