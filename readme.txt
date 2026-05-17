@@ -25,6 +25,7 @@ Faça o pull do repositorio e abra o arquivo index.html em qualquer navegador.
 Arquivos do projeto:
 - index.html
 - style.css
+- cards.css
 - pasta assets com imagens
 
 Acesso rapido do Site (Clique Aqui):
