@@ -19,10 +19,13 @@ Tecnologias utilizadas:
 - HTML5
 - CSS3
 
-Como executar:
-Abra o arquivo index.html em qualquer navegador.
+Como executar o projeto:
+Faça o pull do repositorio e abra o arquivo index.html em qualquer navegador.
 
 Arquivos do projeto:
 - index.html
 - style.css
 - pasta assets com imagens
+
+Acesso rapido do Site (Clique Aqui):
+https://hexnz.github.io/viagens--landing-page/
